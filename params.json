@@ -1,6 +1,6 @@
 {
   "name": "去跑，去跳，去飞",
   "tagline": "miea",
-  "body": "**一个程序员的日常**",
+  "body": "<ul>\r\n　　{% for post in site.posts %}\r\n　　　　<li>{{ post.date | date_to_string }} <a href=\"{{ site.baseurl }}{{ post.url }}\">{{ post.title }}</a></li>\r\n　　{% endfor %}\r\n</ul>",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
