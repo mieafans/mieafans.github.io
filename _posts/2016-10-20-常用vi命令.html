@@ -1,0 +1,77 @@
+---
+layout: blog
+title: C函数解析
+---
+
+<h2 id="toc_0">:sp <filename></h2>
+
+<p>打开一个文件，并和当前打开的文件分屏显示。</p>
+
+<h2 id="toc_1">Ctrl+W+W</h2>
+
+<p>在分屏显示中的不同文件中切换。</p>
+
+<h2 id="toc_2">*</h2>
+
+<p>向前搜索目前光标所在的单词。</p>
+
+<h2 id="toc_3"><code>#</code></h2>
+
+<p>向后搜索目前光标所在的单词。</p>
+
+<h2 id="toc_4">:%s/word1/word2/g</h2>
+
+<p>全文搜索word1并以word2替换之。</p>
+
+<h2 id="toc_5">:’a,’bs/word1/word2/g</h2>
+
+<p>仅在第a行到第b行间搜索并替换。</p>
+
+<h2 id="toc_6">:!<command></h2>
+
+<p>执行一个Shell命令。</p>
+
+<h2 id="toc_7">:!javac %</h2>
+
+<p>使用%可以表示当前文件名。比如：sample.java，以达到编译的目的。</p>
+
+<h2 id="toc_8">:sh</h2>
+
+<p>启运一个shell而不退出vi。exit 命令后回到vi.</p>
+
+<h2 id="toc_9">:line_number</h2>
+
+<p>冒号后跟数字表示要到第几行，如果跟1，表示到文件头，如果跟$，表示到文件尾。</p>
+
+<h2 id="toc_10">Ctrl+G</h2>
+
+<p>可以显示当前行在整个文件的百分比。</p>
+
+<h2 id="toc_11"><number></h2>
+
+<p>重复一个命令number次。比如先输入50，然后输入dd，表示删除50行。</p>
+
+<h2 id="toc_12">yy</h2>
+
+<p>拷贝一个行到VI的剪贴版。</p>
+
+<h2 id="toc_13">p</h2>
+
+<p>粘贴VI</p>
+
+<h2 id="toc_14">&gt;&gt; 和 &lt;&lt;</h2>
+
+<p>用于向右或右左的缩进。</p>
+
+<h2 id="toc_15">u</h2>
+
+<p>undo上一次改变。</p>
+
+<h2 id="toc_16">U</h2>
+
+<p>undo当前行所有的改变。</p>
+
+<h2 id="toc_17">Ctrl + R</h2>
+
+<p>redo被undo了的改变。</p>
+
