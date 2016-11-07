@@ -1,0 +1,81 @@
+---
+layout: blog
+title: DevOps
+---
+
+<h1 id="toc_0">ansible-docker</h1>
+
+<p>ansible提供了docker<em>service， docker</em>container， docker<em>image， docker</em>image<em>facts， docker</em>login， docker这几个模块用于docker的编排</p>
+
+<h2 id="toc_1">计划提供以下功能</h2>
+
+<h3 id="toc_2">docker_container扩展</h3>
+
+<div><pre><code class="language-none">提供现有docker提供的所有</code></pre></div>
+
+<h3 id="toc_3">docker_diff</h3>
+
+<div><pre><code class="language-none">提供几个container的比较，包括volume，image等很多的docker参数</code></pre></div>
+
+<h3 id="toc_4">docker_export</h3>
+
+<div><pre><code class="language-none">将当前的容器导出为一个tar包</code></pre></div>
+
+<h3 id="toc_5">docker_file</h3>
+
+<div><pre><code class="language-none">操作容器中的文件，包含导出文件和导入文件</code></pre></div>
+
+<h3 id="toc_6">docker_image</h3>
+
+<div><pre><code class="language-none">包含所有对image的操作，pull，push，rmi等</code></pre></div>
+
+<h3 id="toc_7">docker<em>image</em>facts</h3>
+
+<div><pre><code class="language-none">提供当前容器的docker cache中的image信息</code></pre></div>
+
+<h3 id="toc_8">docker_network</h3>
+
+<div><pre><code class="language-none">提供创建网络，将容器加入网络，将容器从网络中移除，删除网络</code></pre></div>
+
+<h3 id="toc_9">docker<em>network</em>facts</h3>
+
+<div><pre><code class="language-none">提供当前容器的网络信息</code></pre></div>
+
+<h3 id="toc_10">docker_volume</h3>
+
+<div><pre><code class="language-none">管理volume，包含创建，删除</code></pre></div>
+
+<h3 id="toc_11">docker<em>volume</em>facts</h3>
+
+<div><pre><code class="language-none">提供当前容器的volume信息</code></pre></div>
+
+<h2 id="toc_12">已具有功能</h2>
+
+<h3 id="toc_13">docker_service</h3>
+
+<div><pre><code class="language-none">通过现有的compose files在swam或docker deamon上编排容器，也可以直接在yml里定义，类似docker-compose。</code></pre></div>
+
+<h3 id="toc_14">docker_container</h3>
+
+<div><pre><code class="language-none">通过提供create，upgrade，stop，start，destroy等功能提供容器的生命周期管理。 并提供容器资源限制的策略设置。</code></pre></div>
+
+<h3 id="toc_15">docker_image</h3>
+
+<div><pre><code class="language-none">提供镜像的管理，包括build，pull，push，tag和remove。可使用tls或无tls两种方式链接。</code></pre></div>
+
+<h3 id="toc_16">docker<em>image</em>facts</h3>
+
+<div><pre><code class="language-none">检查docker cache中的image信息</code></pre></div>
+
+<h3 id="toc_17">docker_login</h3>
+
+<div><pre><code class="language-none">为docker hub或私有的docker仓库提供认证服务，并修改docker engine的配置，以便提供免密的pull和push</code></pre></div>
+
+<h3 id="toc_18">docker</h3>
+
+<div><pre><code class="language-none">从一组docker宿主机中动态的创建容器</code></pre></div>
+
+<h3 id="toc_19">docker_network</h3>
+
+<div><pre><code class="language-none">提供docker网络的api，可使用bridge，overlay和指定第三方的模式。并可以在创建网络连接时指定容器使用的子网掩码和ip区段</code></pre></div>
+
